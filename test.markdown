@@ -9,3 +9,10 @@ hello *world*
       B-->D;
       C-->D;
 ```
+
+```mermaid
+  sequenceDiagram TE;
+    participant Alice;
+    participant Bob;
+    Alice->>Bob: Hi Bob;
+    Bob->>Alice: Hi Alice;
