@@ -17,3 +17,15 @@ hello *world*
     Alice->>Bob: Hi Bob
     Bob->>Alice: Hi Alice
 ```
+
+```mermaid
+stateDiagram-v2
+    [*] --> New
+    New --> Ready: admitted
+    Ready --> Running: scheduler dispatch
+    Running --> Ready: interrupt
+    Running --> Waiting: I/O or event wait
+    Waiting --> Ready: I/O or event completion
+    Running --> Terminated: exit
+    Terminated --> [*]
+```
