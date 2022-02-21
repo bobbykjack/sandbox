@@ -19,6 +19,11 @@ hello *world*
 ```
 
 ```mermaid
+sequenceDiagram
+    Bart->>Homer: Don't have a cow, man.
+```
+
+```mermaid
 stateDiagram-v2
     [*] --> New
     New --> Ready: admitted
