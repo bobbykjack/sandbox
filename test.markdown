@@ -34,3 +34,25 @@ stateDiagram-v2
     Running --> Terminated: exit
     Terminated --> [*]
 ```
+
+```mermaid
+flowchart TB
+    subgraph one[" "]
+    data1[data]
+    next1(next)
+    end
+
+    subgraph two[" "]
+    data2(data)
+    next2[next]
+    end
+
+    subgraph three[" "]
+    data3(data)
+    next3[next]
+    end
+
+    next1-->two
+    next2-->three
+    next3-->null
+```
