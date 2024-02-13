@@ -38,18 +38,20 @@ stateDiagram-v2
 ```mermaid
 flowchart LR
     subgraph one[" "]
-    data1[data]
-    next1(next)
+    data1[&lt;li&gt;42&lt;/li&gt;]
+    next1(nextElementSibling)
     end
 
     subgraph two[" "]
-    data2(data)
-    next2[next]
+    direction LR
+    data2[&lt;li id=&quot;current&quot;&gt;7&lt;/li&gt;]
+    next2(nextElementSibling)
     end
 
     subgraph three[" "]
-    data3(data)
-    next3[next]
+    direction LR
+    data3[&lt;li&gt;120&lt;/li&gt;]
+    next3(nextElementSibling)
     end
 
     next1-->two
