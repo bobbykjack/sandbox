@@ -36,7 +36,7 @@ stateDiagram-v2
 ```
 
 ```mermaid
-flowchart TB
+flowchart LR
     subgraph one[" "]
     data1[data]
     next1(next)
